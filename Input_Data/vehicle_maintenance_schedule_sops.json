@@ -1,0 +1,24 @@
+[
+  {
+    "document_id": "DOC-MAIN-SOP-004",
+    "document_title": "Tata Motors Standard Workshop Maintenance & Safety Operating Procedures",
+    "chapter": "Chapter 1: Workshop Safety Protocols & High-Voltage De-energization",
+    "section": "Section 1.1: EV 4-Step Zero-Voltage Safety Verification Protocol",
+    "page_number": 8,
+    "diagram_id": "FIG-SAF-101",
+    "vehicle_models": ["All EV Models", "Nexon EV", "Tiago EV", "Punch EV", "Curvv EV"],
+    "subsystem": "Workshop High-Voltage Safety",
+    "content": "STANDARD OPERATING PROCEDURE: High-Voltage Vehicle De-energization and Touch-Safe Verification.\nMANDATORY PPE: Class 0 electrical safety gloves (certified 1000V AC / 1500V DC working voltage, checked for pinholes via pneumatic inflation test), safety glasses with side shields, ESR composite toe safety boots.\nSTEP 1: SECURE WORK AREA: Place safety cordon posts and high-voltage warning signs around vehicle perimeter (2-meter radius).\nSTEP 2: IGNITION LOCKOUT: Switch ignition OFF, place vehicle key fob in RF-shielded Faraday pouch at least 5 meters away.\nSTEP 3: 12V ISOLATION: Disconnect auxiliary 12V battery negative ground terminal and insulate terminal lug.\nSTEP 4: MANUAL SERVICE DISCONNECT (MSD): Pull red locking tab on MSD plug, rotate lever 90 degrees, and pull plug outward. Lock MSD inside safety lockout box.\nSTEP 5: CAPACITOR DISCHARGE & VERIFICATION: Wait 10 minutes. Using CAT III / CAT IV 1000V rated DMM, measure between HV (+) and HV (-), HV (+) and chassis ground, and HV (-) and chassis ground at PDU test terminals.\nACCEPTANCE CRITERIA: Residual voltage must measure strictly less than 10.0V DC before any mechanical disassembly."
+  },
+  {
+    "document_id": "DOC-MAIN-SOP-004",
+    "document_title": "Tata Motors Standard Workshop Maintenance & Safety Operating Procedures",
+    "chapter": "Chapter 2: Periodic Maintenance Intervals & Lubrication Specifications",
+    "section": "Section 2.3: Recommended Fluids, Capacities & Torque Table",
+    "page_number": 19,
+    "diagram_id": "FIG-TORQ-203",
+    "vehicle_models": ["Harrier", "Safari", "Nexon", "Altroz", "Tiago"],
+    "subsystem": "Chassis, Powertrain Fluids & Fasteners",
+    "content": "SERVICE SPECIFICATIONS & FASTENER TORQUE RATINGS:\n1. Engine Oil Specification (2.0L Kryotec Diesel): SAE 0W-20 ACEA C5 / C2 Fully Synthetic Low-SAPS. Sump capacity: 5.0 Liters with filter. Oil drain plug torque: 28 Nm ± 2 Nm.\n2. Engine Oil Specification (1.2L Revotron Turbo): SAE 5W-30 API SN Plus / ACEA A5/B5. Sump capacity: 3.5 Liters with filter. Oil drain plug torque: 25 Nm.\n3. Wheel Lug Nuts (Harrier/Safari 5-Lug Alloy): 120 Nm ± 5 Nm (torque in star criss-cross pattern).\n4. Spark Plugs (1.2L Petrol): 22 Nm ± 2 Nm (cold engine).\n5. Brake Fluid: DOT 4 Low Viscosity (LV) ISO 4925 Class 6. Replacement interval: Every 24 months or 30,000 km.\n6. EV Reduction Gearbox Transmission Fluid: Castrol BOT 351 EV / Shell E-Fluids. Sump capacity: 1.1 Liters. Fill/drain plug torque: 35 Nm."
+  }
+]

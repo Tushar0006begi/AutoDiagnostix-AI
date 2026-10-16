@@ -1,0 +1,122 @@
+[
+  {
+    "id": "TC-01",
+    "question": "What is the diagnostic procedure and multimeter resistance specification for troubleshooting High Voltage Interlock Loop fault code P0A0C?",
+    "target_dtc": "P0A0C",
+    "expected_doc_id": "DOC-EV-PWR-001",
+    "expected_page": 48,
+    "expected_section": "Section 4.2: High-Voltage Interlock Loop (HVIL) Fault Isolation",
+    "expected_keywords": ["P0A0C", "PDU-X02", "0.5 to 1.8 Ohms", "MSD", "Class 0"],
+    "ground_truth_answer": "Disconnect 12V battery and remove Manual Service Disconnect (MSD). Wait 10 minutes for capacitor discharge. Using CAT III 1000V DMM, measure HVIL continuity across connector PDU-X02 Pins 3 and 7. Expected resistance is 0.5 to 1.8 Ohms."
+  },
+  {
+    "id": "TC-02",
+    "question": "What delta voltage between battery cells triggers DTC P0A80 / P0B24 in Tata EV LFP packs, and what is the balancing routine?",
+    "target_dtc": "P0A80",
+    "expected_doc_id": "DOC-EV-PWR-001",
+    "expected_page": 62,
+    "expected_section": "Section 5.4: Cell Voltage Asymmetry & State-of-Health (SOH) Degradation",
+    "expected_keywords": ["35 mV", "96S", "120 minutes", "3.3kW", "30 mV"],
+    "ground_truth_answer": "Triggered when delta V exceeds 35 mV across 96S string. Technicians must connect Tata Diagnostic Suite v4.2+ and run active balancing for 120 minutes with 3.3kW AC charger until delta falls below 30 mV."
+  },
+  {
+    "id": "TC-03",
+    "question": "How do you diagnose drive motor judder and fault code P0C17 on a Tata EV traction drive?",
+    "target_dtc": "P0C17",
+    "expected_doc_id": "DOC-EV-PWR-001",
+    "expected_page": 89,
+    "expected_section": "Section 6.3: Inverter IGBT Phase Overcurrent & Resolver Angle Offset",
+    "expected_keywords": ["P0C17", "resolver", "18.0 Ohm", "offset auto-zeroing", "3.2 Nm"],
+    "ground_truth_answer": "Inspect resolver harness ground (<0.2 Ohm). Measure Sin/Cos coil impedance: Sine and Cosine windings must both measure 18.0 Ohm ± 1.5 Ohm. Perform Resolver Offset Auto-Zeroing with wheels raised."
+  },
+  {
+    "id": "TC-04",
+    "question": "What causes battery thermal derate under fault code P0E1E and what is the coolant circuit pressure test procedure?",
+    "target_dtc": "P0E1E",
+    "expected_doc_id": "DOC-EV-PWR-001",
+    "expected_page": 104,
+    "expected_section": "Section 7.1: Coolant Pressure Drop & Multi-way Valve Actuation",
+    "expected_keywords": ["P0E1E", "1.5 bar", "0.05 bar", "15 minutes", "Octovalve"],
+    "ground_truth_answer": "Inspect 4-way coolant valve stepper connector C-408. Measure pump Pin 1 (12-14.2V) and Pin 2 PWM signal. Pressure test cooling loop to 1.5 bar (21.7 psi); drop must not exceed 0.05 bar over 15 minutes."
+  },
+  {
+    "id": "TC-05",
+    "question": "What are the probable causes and step-by-step diagnostic workflow for random misfire DTC P0300 on a Revotron 1.2L engine?",
+    "target_dtc": "P0300",
+    "expected_doc_id": "DOC-ICE-ENG-002",
+    "expected_page": 34,
+    "expected_section": "Section 3.1: Cylinder Misfire Diagnostic Procedures (P0300 - P0304)",
+    "expected_keywords": ["P0300", "0.85 mm", "0.95 mm", "8.2 kOhm", "22 Nm"],
+    "ground_truth_answer": "Causes include degraded spark plugs, faulty pencil coil, or intake vacuum leaks. Check freeze frame, verify plug gap is 0.85 to 0.95 mm, check coil secondary resistance (8.2 kOhm ± 0.8 kOhm), and torque plugs to 22 Nm ± 2 Nm."
+  },
+  {
+    "id": "TC-06",
+    "question": "What is the diagnostic threshold and MAF sensor reading for fuel system lean DTC P0171 on Tata Harrier/Safari?",
+    "target_dtc": "P0171",
+    "expected_doc_id": "DOC-ICE-ENG-002",
+    "expected_page": 51,
+    "expected_section": "Section 3.4: Fuel System Lean Condition (P0171 Bank 1)",
+    "expected_keywords": ["+22%", "2.2 g/s", "2.8 g/s", "3.5 to 5.0 Ohms", "smoke test"],
+    "ground_truth_answer": "Triggered when LTFT exceeds +22% for >8 seconds. Inspect MAF reading at 800 RPM idle (should read 2.2 to 2.8 g/s), perform intake smoke test, and check O2 sensor heater resistance (3.5 to 5.0 Ohms)."
+  },
+  {
+    "id": "TC-07",
+    "question": "How do you test the VGT vacuum actuator and solenoid resistance for turbo underboost code P0299 on a Kryotec 2.0L diesel?",
+    "target_dtc": "P0299",
+    "expected_doc_id": "DOC-ICE-ENG-002",
+    "expected_page": 76,
+    "expected_section": "Section 4.3: Turbocharger Underboost Fault Isolation (P0299)",
+    "expected_keywords": ["14.5 Ohm", "500 mmHg", "11.5 mm", "13.0 mm", "32 Nm"],
+    "ground_truth_answer": "Check VGT vacuum solenoid resistance across pins 1 and 2 (expected 14.5 Ohm ± 1.0 Ohm). Apply 500 mmHg vacuum to actuator and verify 11.5 mm to 13.0 mm smooth pushrod travel. Manifold nuts torque: 32 Nm."
+  },
+  {
+    "id": "TC-08",
+    "question": "What is the catalyst efficiency criteria for P0420 and what DEF urea concentration is required for Diesel SCR?",
+    "target_dtc": "P0420",
+    "expected_doc_id": "DOC-ICE-ENG-002",
+    "expected_page": 92,
+    "expected_section": "Section 5.2: Catalyst System Efficiency Threshold (P0420 / SCR De-NOx)",
+    "expected_keywords": ["0.75", "0.55V", "0.70V", "32.5%", "refractometer"],
+    "ground_truth_answer": "Downstream to upstream switch ratio exceeds 0.75. Downstream HO2S must remain stable at 0.55V-0.70V at 2000 RPM. DEF urea concentration measured via refractometer must be 32.5% ± 0.7%."
+  },
+  {
+    "id": "TC-09",
+    "question": "What are the workshop prerequisites and target distance for static calibration of the Front Forward Camera (ADAS L2)?",
+    "target_dtc": "C1A12",
+    "expected_doc_id": "DOC-ADAS-TEL-003",
+    "expected_page": 28,
+    "expected_section": "Section 2.2: Front Forward Camera (FFC) Static & Dynamic Calibration",
+    "expected_keywords": ["3.0 meters", "3000 mm", "1250 mm", "400 lux", "800 lux"],
+    "ground_truth_answer": "Bay floor grade < 0.2 deg, windshield clean, tire pressure 33 psi cold. Mount target board TAT-TGT-01 at exactly 3.0 meters (3000 mm ± 10 mm) from bumper center, height 1250 mm, ambient lighting 400 to 800 lux."
+  },
+  {
+    "id": "TC-10",
+    "question": "How do you align the 77GHz mid-range radar sensor (C1B01) and what is the CAN-FD bus termination resistance?",
+    "target_dtc": "C1B01",
+    "expected_doc_id": "DOC-ADAS-TEL-003",
+    "expected_page": 42,
+    "expected_section": "Section 3.1: Radar Bumper Alignment & Doppler Azimuth Angle Adjustment",
+    "expected_keywords": ["TAT-RAD-LASER", "3.5 mm Allen", "60 Ohms", "4.5 Nm"],
+    "ground_truth_answer": "Mount laser tool TAT-RAD-LASER and align beam to target crosshairs at 5m using 3.5 mm Allen key. Measure CAN-FD bus termination resistance between pins 3 and 4: must read 60 Ohms ± 4 Ohms."
+  },
+  {
+    "id": "TC-11",
+    "question": "What are the mandatory steps of the EV 4-Step Zero-Voltage Safety Verification Protocol before touching high-voltage components?",
+    "target_dtc": "SAFETY-SOP",
+    "expected_doc_id": "DOC-MAIN-SOP-004",
+    "expected_page": 8,
+    "expected_section": "Section 1.1: EV 4-Step Zero-Voltage Safety Verification Protocol",
+    "expected_keywords": ["Class 0", "Faraday pouch", "MSD", "10 minutes", "10.0V DC"],
+    "ground_truth_answer": "Wear Class 0 1000V gloves, place key fob in Faraday pouch 5m away, disconnect 12V negative terminal, pull and lock out MSD, wait 10 minutes, and verify residual voltage is strictly less than 10.0V DC with DMM."
+  },
+  {
+    "id": "TC-12",
+    "question": "What is the wheel lug nut torque specification for Harrier and Safari alloy wheels, and what is the oil drain plug torque?",
+    "target_dtc": "TORQUE-SPEC",
+    "expected_doc_id": "DOC-MAIN-SOP-004",
+    "expected_page": 19,
+    "expected_section": "Section 2.3: Recommended Fluids, Capacities & Torque Table",
+    "expected_keywords": ["120 Nm", "28 Nm", "Kryotec", "Harrier", "Safari"],
+    "ground_truth_answer": "Harrier and Safari alloy wheel lug nuts must be torqued to 120 Nm ± 5 Nm in a star pattern. The 2.0L Kryotec engine oil drain plug torque is 28 Nm ± 2 Nm."
+  }
+]

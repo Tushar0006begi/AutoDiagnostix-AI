@@ -1,0 +1,253 @@
+{
+  "evaluation_timestamp": "2026-10-15T12:20:02Z",
+  "total_test_scenarios": 12,
+  "overall_metrics": {
+    "mean_faithfulness": 0.8611,
+    "mean_answer_relevance": 0.8887,
+    "mean_context_precision": 1.0,
+    "mean_citation_accuracy": 1.0,
+    "mean_latency_ms": 0.39
+  },
+  "detailed_results": [
+    {
+      "test_id": "TC-01",
+      "question": "What is the diagnostic procedure and multimeter resistance specification for troubleshooting High Voltage Interlock Loop fault code P0A0C?",
+      "target_dtc": "P0A0C",
+      "expected_page": 48,
+      "retrieved_pages": [
+        48,
+        89,
+        76
+      ],
+      "metrics": {
+        "faithfulness": 0.85,
+        "answer_relevance": 0.9308,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0,
+        "latency_ms": 0.9
+      },
+      "citations_found": 2,
+      "is_grounded": true
+    },
+    {
+      "test_id": "TC-02",
+      "question": "What delta voltage between battery cells triggers DTC P0A80 / P0B24 in Tata EV LFP packs, and what is the balancing routine?",
+      "target_dtc": "P0A80",
+      "expected_page": 62,
+      "retrieved_pages": [
+        62,
+        48,
+        28
+      ],
+      "metrics": {
+        "faithfulness": 0.85,
+        "answer_relevance": 0.8,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0,
+        "latency_ms": 0.38
+      },
+      "citations_found": 2,
+      "is_grounded": true
+    },
+    {
+      "test_id": "TC-03",
+      "question": "How do you diagnose drive motor judder and fault code P0C17 on a Tata EV traction drive?",
+      "target_dtc": "P0C17",
+      "expected_page": 89,
+      "retrieved_pages": [
+        89,
+        104,
+        48
+      ],
+      "metrics": {
+        "faithfulness": 0.85,
+        "answer_relevance": 0.88,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0,
+        "latency_ms": 0.35
+      },
+      "citations_found": 2,
+      "is_grounded": true
+    },
+    {
+      "test_id": "TC-04",
+      "question": "What causes battery thermal derate under fault code P0E1E and what is the coolant circuit pressure test procedure?",
+      "target_dtc": "P0E1E",
+      "expected_page": 104,
+      "retrieved_pages": [
+        104,
+        48,
+        51
+      ],
+      "metrics": {
+        "faithfulness": 0.85,
+        "answer_relevance": 0.8,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0,
+        "latency_ms": 0.31
+      },
+      "citations_found": 2,
+      "is_grounded": true
+    },
+    {
+      "test_id": "TC-05",
+      "question": "What are the probable causes and step-by-step diagnostic workflow for random misfire DTC P0300 on a Revotron 1.2L engine?",
+      "target_dtc": "P0300",
+      "expected_page": 34,
+      "retrieved_pages": [
+        34,
+        19,
+        48
+      ],
+      "metrics": {
+        "faithfulness": 0.8795,
+        "answer_relevance": 0.9167,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0,
+        "latency_ms": 0.37
+      },
+      "citations_found": 2,
+      "is_grounded": true
+    },
+    {
+      "test_id": "TC-06",
+      "question": "What is the diagnostic threshold and MAF sensor reading for fuel system lean DTC P0171 on Tata Harrier/Safari?",
+      "target_dtc": "P0171",
+      "expected_page": 51,
+      "retrieved_pages": [
+        51,
+        92,
+        28
+      ],
+      "metrics": {
+        "faithfulness": 0.85,
+        "answer_relevance": 1.0,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0,
+        "latency_ms": 0.34
+      },
+      "citations_found": 2,
+      "is_grounded": true
+    },
+    {
+      "test_id": "TC-07",
+      "question": "How do you test the VGT vacuum actuator and solenoid resistance for turbo underboost code P0299 on a Kryotec 2.0L diesel?",
+      "target_dtc": "P0299",
+      "expected_page": 76,
+      "retrieved_pages": [
+        76,
+        34,
+        48
+      ],
+      "metrics": {
+        "faithfulness": 0.9089,
+        "answer_relevance": 0.9308,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0,
+        "latency_ms": 0.34
+      },
+      "citations_found": 2,
+      "is_grounded": true
+    },
+    {
+      "test_id": "TC-08",
+      "question": "What is the catalyst efficiency criteria for P0420 and what DEF urea concentration is required for Diesel SCR?",
+      "target_dtc": "P0420",
+      "expected_page": 92,
+      "retrieved_pages": [
+        92,
+        76,
+        48
+      ],
+      "metrics": {
+        "faithfulness": 0.8694,
+        "answer_relevance": 0.99,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0,
+        "latency_ms": 0.28
+      },
+      "citations_found": 2,
+      "is_grounded": true
+    },
+    {
+      "test_id": "TC-09",
+      "question": "What are the workshop prerequisites and target distance for static calibration of the Front Forward Camera (ADAS L2)?",
+      "target_dtc": "C1A12",
+      "expected_page": 28,
+      "retrieved_pages": [
+        28,
+        42,
+        48
+      ],
+      "metrics": {
+        "faithfulness": 0.8752,
+        "answer_relevance": 0.9,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0,
+        "latency_ms": 0.33
+      },
+      "citations_found": 2,
+      "is_grounded": true
+    },
+    {
+      "test_id": "TC-10",
+      "question": "How do you align the 77GHz mid-range radar sensor (C1B01) and what is the CAN-FD bus termination resistance?",
+      "target_dtc": "C1B01",
+      "expected_page": 42,
+      "retrieved_pages": [
+        42,
+        48,
+        62
+      ],
+      "metrics": {
+        "faithfulness": 0.85,
+        "answer_relevance": 0.8,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0,
+        "latency_ms": 0.29
+      },
+      "citations_found": 2,
+      "is_grounded": true
+    },
+    {
+      "test_id": "TC-11",
+      "question": "What are the mandatory steps of the EV 4-Step Zero-Voltage Safety Verification Protocol before touching high-voltage components?",
+      "target_dtc": "SAFETY-SOP",
+      "expected_page": 8,
+      "retrieved_pages": [
+        8,
+        48,
+        104
+      ],
+      "metrics": {
+        "faithfulness": 0.85,
+        "answer_relevance": 0.8,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0,
+        "latency_ms": 0.37
+      },
+      "citations_found": 2,
+      "is_grounded": true
+    },
+    {
+      "test_id": "TC-12",
+      "question": "What is the wheel lug nut torque specification for Harrier and Safari alloy wheels, and what is the oil drain plug torque?",
+      "target_dtc": "TORQUE-SPEC",
+      "expected_page": 19,
+      "retrieved_pages": [
+        19,
+        48,
+        76
+      ],
+      "metrics": {
+        "faithfulness": 0.85,
+        "answer_relevance": 0.9167,
+        "context_precision": 1.0,
+        "citation_accuracy": 1.0,
+        "latency_ms": 0.42
+      },
+      "citations_found": 2,
+      "is_grounded": true
+    }
+  ]
+}

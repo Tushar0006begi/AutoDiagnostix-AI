@@ -1,0 +1,62 @@
+[
+  {
+    "name": "lookup_obd2_code",
+    "description": "Retrieves official OEM definition, triggering criteria, probable causes, and freeze-frame parameters for an OBD-II diagnostic trouble code (e.g., P0300, P0A0C, C1A12).",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "dtc_code": {
+          "type": "string",
+          "description": "The standardized 5-character alphanumeric trouble code, e.g. 'P0300', 'P0A0C', 'C1A12'."
+        }
+      },
+      "required": ["dtc_code"]
+    }
+  },
+  {
+    "name": "get_torque_spec",
+    "description": "Returns authorized factory torque specifications, fastener size, and thread treatment for vehicle chassis, engine, and electrical bolts.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "component_name": {
+          "type": "string",
+          "description": "Component or fastener name, e.g., 'spark plug', 'wheel lug nuts', 'PDU ground bolt'."
+        },
+        "vehicle_model": {
+          "type": "string",
+          "description": "Target vehicle model, e.g., 'Harrier', 'Safari', 'Nexon EV'."
+        }
+      },
+      "required": ["component_name"]
+    }
+  },
+  {
+    "name": "get_wiring_and_pinout",
+    "description": "Fetches connector IDs, pin assignments, operating voltages, and resistance tolerances for sensor and actuator circuits.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "circuit_name": {
+          "type": "string",
+          "description": "Name of circuit or sensor, e.g., 'HVIL connector PDU-X02', 'O2 Sensor', 'Resolver Sin/Cos'."
+        }
+      },
+      "required": ["circuit_name"]
+    }
+  },
+  {
+    "name": "verify_hv_safety_protocol",
+    "description": "Validates mandatory high-voltage safety isolation steps and PPE requirements prior to servicing EV battery, inverter, or charger components.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "operation": {
+          "type": "string",
+          "description": "Type of maintenance or diagnostic operation being planned, e.g., 'BMS inspection', 'inverter swap'."
+        }
+      },
+      "required": ["operation"]
+    }
+  }
+]

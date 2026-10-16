@@ -1,0 +1,22 @@
+# ==============================================================================
+# AutoDiagnostix-AI: Requirements & Ecosystem Specification
+# Developed for PCCOE CS-AIML & Tata TechPulse Capstone Evaluation
+# ==============================================================================
+
+# Core Native Execution
+# The core AutoDiagnostix-AI RAG pipeline, diagnostic agent, evaluation engine,
+# and web GUI run completely using Python 3.10+ standard libraries without mandatory
+# external pip packages.
+
+# Optional Extended Ecosystem Dependencies (for external LLM & Vector DB experiments)
+# Uncomment the following packages if connecting to live cloud APIs or ChromaDB:
+
+# chromadb>=0.4.24
+# sentence-transformers>=2.5.1
+# google-generativeai>=0.5.2
+# langchain>=0.1.16
+# langchain-community>=0.0.34
+# streamlit>=1.33.0
+# ragas>=0.1.7
+# pydantic>=2.7.0
+# pyyaml>=6.0.1

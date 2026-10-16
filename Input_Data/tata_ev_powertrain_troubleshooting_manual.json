@@ -1,0 +1,46 @@
+[
+  {
+    "document_id": "DOC-EV-PWR-001",
+    "document_title": "Tata Electric Vehicle Powertrain & High-Voltage Service Manual",
+    "chapter": "Chapter 4: High-Voltage System Safety & Battery Management",
+    "section": "Section 4.2: High-Voltage Interlock Loop (HVIL) Fault Isolation",
+    "page_number": 48,
+    "diagram_id": "FIG-HV-402B",
+    "vehicle_models": ["Nexon EV Max", "Tiago EV", "Curvv EV"],
+    "subsystem": "High-Voltage Distribution & BMS",
+    "content": "FAULT CODE: P0A0C - High Voltage Interlock Circuit Low.\nSYMPTOM: Vehicle fails to enter 'READY' drive state; High-Voltage warning lamp illuminated on digital instrument cluster.\nSAFETY PRECAUTION: Always wear Class 0 (1000V rated) insulating gloves and arc-flash face shield before interacting with HV distribution box (PDU).\nDIAGNOSTIC WORKFLOW:\nStep 1: Turn vehicle ignition OFF. Wait minimum 10 minutes to allow DC-link intermediate capacitors inside the dual-inverter to discharge below 12V DC.\nStep 2: Disconnect the 12V auxiliary battery negative terminal.\nStep 3: Remove the Manual Service Disconnect (MSD) safety plug located beneath the rear passenger seat assembly (Section 4.1, Page 45).\nStep 4: Using a calibrated Digital Multimeter (CAT III 1000V certified), probe HVIL continuity across connector PDU-X02 Pins 3 and 7. Standard expected resistance is 0.5 to 1.8 Ohms.\nStep 5: If resistance exceeds 2.5 Ohms, inspect the high-voltage interlock microswitch pins on the AC-DC on-board charger (OBC) and battery pack lid.\nTORQUE SPECIFICATION: PDU M6 ground bolt must be torqued to 9.5 Nm ± 0.5 Nm."
+  },
+  {
+    "document_id": "DOC-EV-PWR-001",
+    "document_title": "Tata Electric Vehicle Powertrain & High-Voltage Service Manual",
+    "chapter": "Chapter 5: Battery Management System (BMS) Cell Balancing",
+    "section": "Section 5.4: Cell Voltage Asymmetry & State-of-Health (SOH) Degradation",
+    "page_number": 62,
+    "diagram_id": "FIG-BMS-504",
+    "vehicle_models": ["Nexon EV", "Punch EV", "Curvv EV"],
+    "subsystem": "Lithium Iron Phosphate (LFP) Battery Pack",
+    "content": "FAULT CODE: P0A80 - Replace Hybrid/EV Battery Pack; DTC P0B24 - Hybrid Battery Pack Voltage Uneven.\nCRITERIA: Triggered when delta V (maximum cell voltage minus minimum cell voltage) exceeds 35 mV across the 96S module string during continuous discharge, or when cell internal resistance delta exceeds 15%.\nDIAGNOSTIC WORKFLOW:\nStep 1: Connect OEM diagnostic scan tool (Tata Diagnostic Suite v4.2+) to OBD-II port under steering column.\nStep 2: Navigate to BMS Live Data Stream: Monitor Cell Voltages #01 through #96.\nStep 3: Execute active balancing routine via bidirectional control menu. Allow balancing cycle to run for 120 minutes with vehicle connected to slow AC 3.3kW wall-box charger.\nStep 4: If cell delta remains above 30 mV after 2 consecutive balancing cycles, perform module-level isolation test (Section 5.6, Page 68).\nStep 5: Measure module cooling plate inlet temperature sensor (NTC Thermistor). Nominal resistance at 25°C is 10.0 kOhm ± 0.3 kOhm.\nWARNING: Do not charge vehicle if any individual cell temperature reports above 55°C."
+  },
+  {
+    "document_id": "DOC-EV-PWR-001",
+    "document_title": "Tata Electric Vehicle Powertrain & High-Voltage Service Manual",
+    "chapter": "Chapter 6: Traction Inverter & Permanent Magnet Synchronous Motor (PMSM)",
+    "section": "Section 6.3: Inverter IGBT Phase Overcurrent & Resolver Angle Offset",
+    "page_number": 89,
+    "diagram_id": "FIG-INV-603A",
+    "vehicle_models": ["Nexon EV Max", "Harrier EV"],
+    "subsystem": "Electric Traction Drive",
+    "content": "FAULT CODE: P0C17 - Drive Motor Position Sensor Calibration Not Learned; DTC P0A3F - Drive Motor A Position Sensor Circuit.\nSYMPTOM: Severe motor judder upon initial torque request; vehicle enters limp-home mode with speed restricted to 20 km/h.\nDIAGNOSTIC WORKFLOW:\nStep 1: Check resolver wiring harness between Motor Controller (MCU) 26-pin harness and PMSM tail-end housing. Verify shield ground resistance is < 0.2 Ohm.\nStep 2: Perform Sin/Cos excitation coil impedance check: Sine winding resistance should measure 18.0 Ohm ± 1.5 Ohm at 20°C. Cosine winding resistance should measure 18.0 Ohm ± 1.5 Ohm.\nStep 3: If coil resistance is within specification, conduct Resolver Offset Auto-Zeroing procedure using diagnostic tool with drive wheels raised on a two-post hydraulic lift.\nStep 4: Inspect MCU coolant supply line for air lock. Minimum coolant flow rate must be 8.5 Liters/min at 3500 RPM pump speed.\nTORQUE SPECIFICATION: Motor resolver retaining screws M4: 3.2 Nm ± 0.3 Nm."
+  },
+  {
+    "document_id": "DOC-EV-PWR-001",
+    "document_title": "Tata Electric Vehicle Powertrain & High-Voltage Service Manual",
+    "chapter": "Chapter 7: Thermal Management & Heat Pump System",
+    "section": "Section 7.1: Coolant Pressure Drop & Multi-way Valve Actuation",
+    "page_number": 104,
+    "diagram_id": "FIG-THM-701C",
+    "vehicle_models": ["Nexon EV", "Curvv EV", "Harrier EV"],
+    "subsystem": "Battery and Drive Unit Thermal Management",
+    "content": "FAULT CODE: P0E1E - Hybrid/EV Battery Coolant Pump 'A' Control Range/Performance.\nSYMPTOM: Rapid battery de-rating in ambient temperatures > 40°C; Fast charging rate throttles from 50 kW down to 12 kW.\nDIAGNOSTIC WORKFLOW:\nStep 1: Check coolant expansion tank level. Verify fluid is approved low-conductivity 50/50 ethylene glycol OAT EV coolant (Part #TAT-EV-CLNT-01).\nStep 2: Inspect 4-way coolant distribution valve (Octovalve/Multiport Valve) stepper motor connector C-408 for pin corrosion or bent pins.\nStep 3: Measure supply voltage on Pin 1 of pump harness with ignition ON: Must be 12.0V to 14.2V DC. Pin 2 (PWM speed signal) must display 100 Hz square wave.\nStep 4: Pressure test cooling circuit to 1.5 bar (21.7 psi) using adapter TAT-T-992. Pressure drop must not exceed 0.05 bar over 15 minutes."
+  }
+]

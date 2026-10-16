@@ -1,0 +1,42 @@
+{
+  "corpus_name": "Tata Motors Service & Diagnostics Knowledge Base",
+  "version": "2.4.0",
+  "organization": "Tata TechPulse & PCCOE CS-AIML Applied AI Project",
+  "total_manuals": 4,
+  "documents": [
+    {
+      "file": "tata_ev_powertrain_troubleshooting_manual.json",
+      "document_id": "DOC-EV-PWR-001",
+      "title": "Tata Electric Vehicle Powertrain & High-Voltage Service Manual",
+      "coverage": ["High-Voltage Interlock Loop (P0A0C)", "BMS Cell Balancing (P0A80, P0B24)", "Inverter/PMSM Resolver (P0C17, P0A3F)", "Battery Thermal Loop (P0E1E)"],
+      "pages_covered": [48, 62, 89, 104]
+    },
+    {
+      "file": "tata_ice_engine_obd2_diagnostic_codes.json",
+      "document_id": "DOC-ICE-ENG-002",
+      "title": "Tata Kryotec 2.0L Diesel & Revotron 1.2L Turbocharged Engine Service Manual",
+      "coverage": ["Misfire Troubleshooting (P0300-P0304)", "Fuel System Lean (P0171)", "Turbo Underboost (P0299)", "Catalyst & SCR Efficiency (P0420, P20EE)"],
+      "pages_covered": [34, 51, 76, 92]
+    },
+    {
+      "file": "tata_adas_and_telematics_service_manual.json",
+      "document_id": "DOC-ADAS-TEL-003",
+      "title": "Tata Advanced Driver Assistance Systems (ADAS L2) & Telematics Service Manual",
+      "coverage": ["Forward Facing Camera Calibration (C1A12, C1A15)", "77GHz Radar Bumper Alignment (C1B01, U011D)", "Telematics Control Unit (U0198, B125F)"],
+      "pages_covered": [28, 42, 67]
+    },
+    {
+      "file": "vehicle_maintenance_schedule_sops.json",
+      "document_id": "DOC-MAIN-SOP-004",
+      "title": "Tata Motors Standard Workshop Maintenance & Safety Operating Procedures",
+      "coverage": ["EV Zero-Voltage Touch-Safe SOP", "Torque Tables, Fluids, Lubricant Capacities"],
+      "pages_covered": [8, 19]
+    }
+  ],
+  "indexing_strategy": {
+    "chunk_strategy": "Section-Aware Semantic Chunking",
+    "chunk_size_words": 150,
+    "chunk_overlap_words": 30,
+    "metadata_fields_indexed": ["document_id", "document_title", "chapter", "section", "page_number", "diagram_id", "vehicle_models", "subsystem"]
+  }
+}

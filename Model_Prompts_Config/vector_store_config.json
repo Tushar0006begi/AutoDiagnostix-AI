@@ -1,0 +1,25 @@
+{
+  "vector_store": {
+    "engine": "Hybrid Dense-Sparse Vector Store",
+    "supported_backends": ["InMemory-Numpy", "ChromaDB", "FAISS-CPU"],
+    "index_type": "HNSW / Inverted Index",
+    "distance_metric": "Cosine Similarity",
+    "hnsw_parameters": {
+      "ef_construction": 100,
+      "m": 16,
+      "ef_search": 50
+    },
+    "lexical_index": {
+      "algorithm": "Okapi BM25",
+      "k1": 1.5,
+      "b": 0.75,
+      "token_pattern": "(?u)\\b[\\w\\-]{2,}\\b"
+    },
+    "metadata_indexes": [
+      "document_id",
+      "vehicle_models",
+      "subsystem",
+      "page_number"
+    ]
+  }
+}

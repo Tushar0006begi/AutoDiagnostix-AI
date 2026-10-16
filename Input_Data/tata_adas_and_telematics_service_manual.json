@@ -1,0 +1,35 @@
+[
+  {
+    "document_id": "DOC-ADAS-TEL-003",
+    "document_title": "Tata Advanced Driver Assistance Systems (ADAS L2) & Telematics Service Manual",
+    "chapter": "Chapter 2: Forward Camera & Millimeter Wave Radar Alignment",
+    "section": "Section 2.2: Front Forward Camera (FFC) Static & Dynamic Calibration",
+    "page_number": 28,
+    "diagram_id": "FIG-ADAS-202",
+    "vehicle_models": ["Harrier Facelift", "Safari Facelift", "Curvv"],
+    "subsystem": "Camera Perception & Autonomous Emergency Braking (AEB)",
+    "content": "FAULT CODE: C1A12 - Forward Facing Camera Misalignment; DTC C1A15 - Camera Optical Blockage or Glare.\nSYMPTOM: ADAS Malfunction warning lamp displayed; Lane Keep Assist (LKA) and Adaptive Cruise Control (ACC) disabled.\nCALIBRATION PREREQUISITES:\n1. Vehicle parked on level workshop bay floor (tilt grade < 0.2 degrees).\n2. Front windshield thoroughly cleaned, zero stone chips or optical distortion in front of camera lens.\n3. Fuel tank filled to at least 90%; tire pressures set exactly to door jamb placard spec (33 psi cold).\nSTATIC CALIBRATION WORKFLOW:\nStep 1: Mount calibration target board (Tata ADAS Target Pattern #TAT-TGT-01) at exactly 3.0 meters (3000 mm ± 10 mm) from the front bumper center badge.\nStep 2: Adjust target board center height to 1250 mm from level ground.\nStep 3: Ensure workshop ambient lighting is uniform between 400 lux and 800 lux (avoid fluorescent flicker directly above camera).\nStep 4: Initiate FFC Static Learning in diagnostic software. Process takes 45 seconds; verify pitch angle is within ± 1.2 degrees and roll angle is within ± 0.8 degrees.\nDYNAMIC CALIBRATION WORKFLOW:\nDrive vehicle on well-marked multi-lane expressway between 65 km/h and 90 km/h for minimum 15 minutes until calibration status bar reaches 100%."
+  },
+  {
+    "document_id": "DOC-ADAS-TEL-003",
+    "document_title": "Tata Advanced Driver Assistance Systems (ADAS L2) & Telematics Service Manual",
+    "chapter": "Chapter 3: 77GHz Mid-Range Radar (MRR) Sensor Calibration",
+    "section": "Section 3.1: Radar Bumper Alignment & Doppler Azimuth Angle Adjustment",
+    "page_number": 42,
+    "diagram_id": "FIG-RAD-301C",
+    "vehicle_models": ["Harrier Facelift", "Safari Facelift"],
+    "subsystem": "Millimeter Wave Radar Sensing",
+    "content": "FAULT CODE: C1B01 - Radar Sensor Azimuth Angle Out of Tolerance; DTC U011D - Lost Communication with Front Distance Radar.\nSYMPTOM: False Forward Collision Warning (FCW) alerts triggered by guardrails on highway curves.\nDIAGNOSTIC WORKFLOW:\nStep 1: Inspect lower front bumper grille bracket for mechanical impact deformation or bent clips.\nStep 2: Mount optical laser level tool TAT-RAD-LASER to radar housing face. Direct laser beam to corner reflector target positioned 5 meters in front of vehicle centerline.\nStep 3: Using 3.5 mm Allen hex key, turn horizontal azimuth adjustment screw until laser dot falls within the target center crosshair circle (± 0.5 degrees).\nStep 4: Inspect 8-pin radar connector R-01 for CAN-FD bus termination resistance: Between CAN-High (Pin 3) and CAN-Low (Pin 4), resistance must measure 60 Ohms ± 4 Ohms.\nTORQUE SPECIFICATION: Radar mounting bracket Torx T20 screws: 4.5 Nm ± 0.4 Nm."
+  },
+  {
+    "document_id": "DOC-ADAS-TEL-003",
+    "document_title": "Tata Advanced Driver Assistance Systems (ADAS L2) & Telematics Service Manual",
+    "chapter": "Chapter 5: Telematics Control Unit (TCU) & iRA Connected Car Platform",
+    "section": "Section 5.3: TCU e-SIM Provisioning & CAN Gateway Communication",
+    "page_number": 67,
+    "diagram_id": "FIG-TCU-503",
+    "vehicle_models": ["Harrier", "Safari", "Nexon", "Altroz"],
+    "subsystem": "Telematics, GNSS & Remote Diagnostics",
+    "content": "FAULT CODE: U0198 - Lost Communication with Telematics Control Module; DTC B125F - Telematics Internal e-SIM Authentication Failed.\nSYMPTOM: Mobile app remote lock/unlock inoperative; SOS emergency call button red LED illuminated.\nDIAGNOSTIC WORKFLOW:\nStep 1: Check fuse F22 (10A) in interior cabin fuse block behind glove compartment.\nStep 2: Inspect TCU internal backup battery (3.7V Li-ion pouch cell). If voltage is below 3.2V, replace internal cell (Part #TAT-TCU-BAT02).\nStep 3: Verify GNSS / 4G LTE roof shark-fin antenna coaxial cables (Fakra connectors: Blue = GPS, Bordeaux = Cellular). Insertion loss must be < 1.5 dB.\nStep 4: Run TCU Hard Reset routine: Hold SOS button and Wrench button simultaneously for 15 seconds until status LED flashes amber 3 times."
+  }
+]
